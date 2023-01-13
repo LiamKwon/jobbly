@@ -1,0 +1,59 @@
+/* nav login color  */
+
+.navbar-nav li:nth-child(5) a,
+.navbar-nav li:nth-child(5) a:focus,
+.navbar-nav li:nth-child(5) a:hover {
+  color: #5271ff;
+}
+
+/* nav header */
+.nav-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 80px;
+
+  background: #1e1e1e;
+}
+/* in nav ul center in div */
+.navbar-ul-center {
+  text-align: center;
+}
+/* in nav a style */
+
+.nav-item {
+  padding: 8px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+.nav-item a {
+  color: beige;
+}
+.nav-link:focus,
+.nav-link:hover {
+  color: beige;
+  font-weight: 1000;
+}
+/* sign up btn style */
+
+.nav-item form button {
+  padding: 0px 24px;
+  width: 105px;
+  height: 38px;
+  background: #2242ff;
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 150%;
+  color: #ffffff;
+}
+/* nav drop down btn */
+.navbar-toggler {
+  background-color: #2242ff;
+  color: #2242ff;
+}
+/* nav drop down btn focus style */
+.navbar-toggler:focus {
+  box-shadow: none;
+}
