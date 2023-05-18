@@ -8,10 +8,11 @@
 
 /* nav header */
 .nav-header {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
+  z-index: 1;
   padding: 20px 80px;
 
   background: #1e1e1e;
@@ -36,7 +37,9 @@
   font-weight: 1000;
 }
 /* sign up btn style */
-
+.btn:hover {
+  background-color: #2242ff;
+}
 .nav-item form button {
   padding: 0px 24px;
   width: 105px;
@@ -56,4 +59,181 @@
 /* nav drop down btn focus style */
 .navbar-toggler:focus {
   box-shadow: none;
+}
+
+/* sign up page */
+.modal {
+  display: none; /* Hide the modal by default */
+  position: fixed; /* Position it relative to the browser window */
+  z-index: 1; /* Set a high z-index to make sure it appears on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enable scrolling if needed */
+  background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* Center the modal on the page */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 28px;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+}
+
+/*home div*/
+/*default style for div*/
+.container-homediv {
+  background: beige;
+  width: 100%;
+  margin: 0;
+}
+.child-div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  isolation: isolate;
+}
+.first-div {
+  padding: 0px;
+  gap: 12px;
+  height: 482px;
+
+  background: #1e1e1e;
+}
+.mlfd-div {
+  position: absolute;
+  display: flex;
+
+  width: 1070px;
+  height: 186px;
+
+  justify-content: center;
+
+  z-index: 1;
+}
+.lifd-div {
+  position: absolute;
+  display: flex;
+
+  margin-bottom: -230px;
+  margin-left: -950px;
+
+  width: 335px;
+  height: 172px;
+
+  /* why?? need to ask*/
+  /* border: 4px solid #383333; */
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+
+  /* Inside auto layout */
+}
+.rifd-div {
+  position: absolute;
+  display: flex;
+
+  margin-top: -190px;
+  margin-right: -870px;
+
+  width: 309px;
+  height: 276.9px;
+}
+.second-div {
+  padding: 80px 160px;
+  gap: 60px;
+
+  height: 878px;
+  background: #f0efec;
+}
+.mfsd-p {
+  margin-top: -750px;
+  width: 1120px;
+  height: 48px;
+
+  /* H2 */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 150%;
+
+  /* identical to box height, or 48px */
+  text-align: center;
+  letter-spacing: -0.022em;
+
+  color: #000000;
+}
+.misd-div {
+  position: absolute;
+  display: flex;
+  margin-top: -200px;
+
+  width: 1140px;
+  height: 423px;
+
+  justify-content: center;
+}
+.blsd-div {
+  position: absolute;
+  display: flex;
+  margin-bottom: -460px;
+}
+.bfsd-div {
+  position: absolute;
+  display: flex;
+  margin-bottom: -740px;
+}
+
+.bfsd-btn {
+  padding: 0px 24px;
+  width: 132px;
+  height: 44px;
+  background: #2242ff;
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 150%;
+  color: #ffffff;
+}
+.third-div {
+  padding: 80px 160px;
+  gap: 40px;
+
+  height: 1600px;
+  background: #ffffff;
+}
+.fourth-div {
+  padding: 80px 160px;
+  gap: 40px;
+
+  height: 822.75px;
+  background: #1e1e1e;
+}
+.fifth-div {
+  padding: 80px 160px;
+  gap: 40px;
+
+  height: 699.33px;
+  background: #f0efec;
+}
+.sixth-div {
+  padding: 80px 160px;
+  gap: 50px;
+
+  height: 943px;
+  background: #ffffff;
 }

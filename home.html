@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -14,11 +15,23 @@
     />
     <!-- CSS file link -->
     <link rel="stylesheet" href="CSS/style.css" />
+    <!--js file link  -->
+    <script type="text/javascript" src="webjs.js"></script>
+    <!-- google sign in js -->
+    <!-- <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta
+      name="google-signin-client_id"
+      content="264304550329-k35tb0gh7ftjilp9neor9v4qllkfithc.apps.googleusercontent.com"
+    /> -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
   </head>
   <body>
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg nav-header">
-      <a class="navbar-brand" href="#">JOBBLY</a>
+      <a href="home.html"
+        ><img src="image/jobblytatle.png" alt="jobbly tatle"
+      /></a>
+
       <button
         class="navbar-toggler"
         type="button"
@@ -33,30 +46,120 @@
       <div class="collapse navbar-collapse navbar-ul-center" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">What is Jobbly?</a>
+            <a class="nav-link" aria-current="page" href="#what-is-jobbly-div"
+              >What is Jobbly?</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Career leaders</a>
+            <a class="nav-link" href="#career-leaders-div">Career leaders</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">How Jobbly works</a>
+            <a class="nav-link" href="#how-Jobbly-works-div"
+              >How Jobbly works</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Reviews</a>
+            <a class="nav-link" href="#reviews-div">Reviews</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Log in</a>
           </li>
           <li class="nav-item">
             <form class="container-fluid justify-content-start btn-padding">
-              <button class="btn" type="button">Sign up</button>
+              <button id="signup-button" class="btn" type="button">
+                Sign up
+              </button>
             </form>
           </li>
         </ul>
       </div>
     </nav>
+    <!--sign up page -->
+    <div id="signup-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
 
-    <!-- first div in home -->
+        <!-- Add your sign-up form here -->
+        <!-- <div class="g-signin2" data-onsuccess="onSignIn"></div> -->
+
+        <div
+          id="g_id_onload"
+          data-client_id="264304550329-k35tb0gh7ftjilp9neor9v4qllkfithc.apps.googleusercontent.com"
+          data-context="signup"
+          data-ux_mode="popup"
+          data-login_uri="http://localhost:5500"
+          data-itp_support="true"
+        ></div>
+
+        <div
+          id="onSignIn"
+          class="g_id_signin"
+          data-type="standard"
+          data-shape="rectangular"
+          data-theme="outline"
+          data-text="signin_with"
+          data-size="large"
+          data-logo_alignment="left"
+        ></div>
+      </div>
+    </div>
+
+    <!-- div in home -->
+    <div class="container-homediv">
+      <!-- first div in home -->
+      <div class="child-div first-div">
+        <!-- main letter image -->
+
+        <div class="mlfd-div">
+          <img src="image/MLFD.png" alt="main letter for first div" />
+
+          <!-- <img src="image/LIFD.png" alt="image on left" class="lifd-div" />
+          <img src="image/RIFD.png" alt="image on right" class="rifd-div" /> -->
+        </div>
+        <!-- wave image -->
+        <div class="lifd-div">
+          <img src="image/LIFD.png" alt="image on left" />
+        </div>
+        <!-- on the right image -->
+        <div class="rifd-div">
+          <img src="image/RIFD.png" alt="image on right" />
+        </div>
+      </div>
+      <!-- 2nd div in home -->
+      <div class="child-div second-div" id="what-is-jobbly-div">
+        <div class="mfsd-p"><p>What is jobbly?</p></div>
+
+        <div class="misd-div">
+          <img src="image/MISD.png" alt="main image for second div" />
+        </div>
+        <div class="blsd-div">
+          <img src="image/blsd.png" alt="letters for bottom" />
+        </div>
+        <div class="bfsd-div">
+          <button class="btn bfsd-btn" type="button">Get started</button>
+        </div>
+      </div>
+      <!-- 3rd div in home -->
+      <div class="third-div" id="career-leaders-div">
+        <h2>Section 3</h2>
+        <p>Content goes here.</p>
+      </div>
+      <!-- 4th div in home -->
+      <div class="fourth-div" id="how-Jobbly-works-div">
+        <h2>Section 4</h2>
+        <p>Content goes here.</p>
+      </div>
+      <!-- 5th div in home -->
+      <div class="fifth-div" id="reviews-div">
+        <h2>Section 5</h2>
+        <p>Content goes here.</p>
+      </div>
+      <!-- 6th div in home -->
+      <div class="sixth-div">
+        <h2>Section 6</h2>
+        <p>Content goes here.</p>
+      </div>
+    </div>
 
     <!-- bootstrap js -->
     <script
